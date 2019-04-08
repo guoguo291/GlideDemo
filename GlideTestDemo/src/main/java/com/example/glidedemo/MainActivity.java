@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String url = "http://cn.bing.com/az/hprichbg/rb/Dongdaemun_ZH-CN10736487148_1920x1080.jpg";
-                Glide.with(MainActivity.this).load(url).into(iv_show);
+                Glide.with(MainActivity.this).load(url).placeholder(R.mipmap.ic_loading).into(iv_show);
             }
         });
     }
